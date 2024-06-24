@@ -52,7 +52,7 @@ export function SignupButton() {
     const { pending } = useFormStatus();
 
     return (
-        <Button aria-disabled={pending} type="submit" className="mt-2 w-full">
+        <Button aria-disabled={pending} type="submit" className="mt-2 w-full bg-gray-400">
             {pending ? 'Submitting...' : 'Login'}
         </Button>
     );

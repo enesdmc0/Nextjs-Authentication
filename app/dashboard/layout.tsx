@@ -3,8 +3,6 @@ import LogoutButton from "./logout-button";
 import Image from "next/image";
 import { getUser } from "@/app/auth/03-dal";
 
-
-
 export default async function Layout({
   children,
 }: {
@@ -15,15 +13,15 @@ export default async function Layout({
   const activeLink = "/dashboard";
 
   return (
-    <div className="flex min-h-screen w-full">
+    <div className="flex min-h-screen w-full bg-black">
       <div className="flex w-full flex-col">
         <header className="flex h-14 items-center border-b px-4 md:gap-4">
-        <LogoutButton />
+          <LogoutButton />
           <div className="ml-auto flex items-center gap-4">
             <div>
-              <span>{user?.name}</span>
+              <span className="text-white underline">{user?.name}</span>
             </div>
-            <Button className="rounded-full" size="icon" variant="ghost">
+            <Button className="rounded-full border" size="icon" variant="ghost">
               <Image
                 alt="Avatar"
                 className="rounded-full"

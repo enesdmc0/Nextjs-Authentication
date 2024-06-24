@@ -5,7 +5,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="container mx-auto mt-36 flex max-w-7xl justify-center">
+    <main className="container mx-auto flex max-w-7xl justify-center items-center w-full h-full bg-black">
       {children}
     </main>
   );
