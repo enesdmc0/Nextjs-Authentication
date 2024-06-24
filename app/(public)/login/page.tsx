@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Page() {
     return (
-        <div className="flex flex-col p-4 lg:w-1/3">
+        <div className="flex flex-col p-4 w-full md:w-[400px] ">
             <div className="text-center">
                 <h1 className="text-3xl text-white font-bold">Login</h1>
             </div>

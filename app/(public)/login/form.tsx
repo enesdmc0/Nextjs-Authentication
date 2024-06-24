@@ -12,7 +12,7 @@ export function LoginForm() {
 
   return (
     <form action={action}>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 ">
         <div>
           <Label htmlFor="email">Email</Label>
           <Input
